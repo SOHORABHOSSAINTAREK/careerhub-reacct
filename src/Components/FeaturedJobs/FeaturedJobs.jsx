@@ -19,7 +19,7 @@ const FeaturedJobs = () => {
                 }
             </div>
             <div className={dataLength === featuredJobs.length && 'hidden'}>
-                <button onClick={() => setDataLength(featuredJobs.length)} className="btn mt-4 flex mx-auto btn-outline btn-accent">View Details</button>
+                <button onClick={() => setDataLength(featuredJobs.length)} className="btn mt-4 flex mx-auto btn-outline btn-accent">Show More</button>
             </div>
         </div>
     );
