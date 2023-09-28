@@ -1,6 +1,7 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { CiDollar, CiLaptop, CiPhone, CiMail, CiLocationOn } from "react-icons/ci";
 import { saveStoredData } from "../../utilites/LocalStorage";
+import { Helmet } from "react-helmet-async";
 const JobDetails = () => {
     const jobs = useLoaderData();
     const { id } = useParams();
@@ -13,6 +14,9 @@ const JobDetails = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Career Hub | Details</title>
+            </Helmet>
             <h1 className="text-3xl font-bold text-center py-32 bg-blue-100 text-[#1A1919]">Job Details</h1>
             <div className="max-w-7xl mx-auto my-32  grid grid-cols-4">
                 <div className="col-span-3 space-y-4">

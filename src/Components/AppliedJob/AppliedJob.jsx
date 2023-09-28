@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { CiLocationOn, CiDollar } from "react-icons/ci";
 import { NavLink } from "react-router-dom";
 
@@ -5,6 +6,9 @@ const AppliedJob = ({ appliedJob }) => {
     const { id, logo, job_title, company_name, remote_or_onsite, location, salary, job_type } = appliedJob;
     return (
         <div className="mx-auto flex justify-between">
+            <Helmet>
+                <title>Career Hub | Applied Jobs</title>
+            </Helmet>
             <div className="w-[240px]">
                 <img src={logo} alt="" />
             </div>
